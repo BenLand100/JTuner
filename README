@@ -1,0 +1,17 @@
+If you don't want to go buy a tuner, and you have a computer with a mic, you 
+should try this if you need to tune something. As long as you know the frequency
+of the note you are tuning to, it will work fine. I was too lazy to write a 
+Discrete Fourier Transform that would simply tell the frequency of the note, but 
+this is, in my opinion, much cooler. Since the frequency of the note also 
+specifies the wavelength of the note, and computer sound cards sample sound at a 
+consistent rate (44100 times a second), simply drawing the sound data on the 
+screen will allow you to see if a note is in tune, close, or way off, based on 
+how it appears to move. With a display of the waveform that is an even multiple 
+of the wavelength of the note you are tuning to (both in samples), the waveform
+will appear to stand still. If its flat, the waveform will appear to precess to 
+the right, and if it is sharp it will appear to recess to the left. If the note 
+is way off, it will jump around a lot. Those of you with a scientific and 
+musical background will appreciate this I hope. I needed it to tune my new 
+viola, so I've tested it and all.
+ 
+~Benjamin Land
